@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balasundharam J — Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Balasundharam J — ECE, IoT, Embedded Systems, AI &amp; Software Development." />
+    <meta name="author" content="Balasundharam J" />
+    <meta name="theme-color" content="#07080f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ═══════ INTRO OVERLAY ═══════ -->
+    <div id="intro" class="intro" aria-hidden="true">
+        <div class="intro-gradient"></div>
+        <div class="intro-content">
+            <h1 class="intro-name">
+                <span class="intro-line">Balasundharam</span>
+                <span class="intro-line intro-line--accent">J</span>
+            </h1>
+            <div class="intro-sweep"></div>
+            <p class="intro-sub">Engineering the Future</p>
+        </div>
+    </div>
+
+    <!-- ═══════ SCROLL PROGRESS ═══════ -->
+    <div id="scroll-bar" class="scroll-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+    </div>
+
+    <!-- ═══════ LIVE ANIMATED CANVAS BACKGROUND ═══════ -->
+    <canvas id="live-bg" aria-hidden="true"></canvas>
+
+    <!-- ═══════ NAVBAR ═══════ -->
+    <header id="nav" class="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-brand">&lt;BJ&gt;</a>
+            <button id="burger" class="burger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="nav-menu" class="nav-menu" role="navigation">
+                <a href="#about" class="nav-a">About</a>
+                <a href="#skills" class="nav-a">Skills</a>
+                <a href="#projects" class="nav-a">Projects</a>
+                <a href="#experience" class="nav-a">Experience</a>
+                <a href="#achievements" class="nav-a">Achievements</a>
+                <a href="#certifications" class="nav-a">Certs</a>
+                <a href="#contact" class="nav-a nav-a--cta">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ═══════ MAIN CONTENT (initially blurred, revealed after intro) ═══════ -->
+    <main id="main" class="main-wrap">
+
+        <!-- ─── HERO ─── -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="hero-tag"><span class="tag-dot"></span> Available for Opportunities</p>
+                    <h1 class="hero-name">Balasundharam <span class="gr">J</span></h1>
+                    <div class="typing-wrap">
+                        <span class="typing-static">I build </span>
+                        <span id="typed" class="gr typed-word"></span>
+                        <span class="caret"></span>
+                    </div>
+                    <p class="hero-bio">Final-year ECE student passionate about electronics, embedded systems, IoT, and
+                        AI-driven solutions. Focused on innovation, real-world problem solving, and building scalable
+                        technology.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn--primary mag"><i data-lucide="layers" class="btn-i"></i>View
+                            Projects</a>
+                        <a href="#contact" class="btn btn--glass mag"><i data-lucide="send" class="btn-i"></i>Contact
+                            Me</a>
+                        <a href="BALA UPDATE RESUME NEW.pdf" target="_blank" class="btn btn--resume mag" id="dl-cv"><i
+                                data-lucide="download" class="btn-i"></i>Resume</a>
+                    </div>
+                    <div class="hero-links">
+                        <a href="https://github.com/bala25042004" target="_blank" rel="noopener" class="h-link mag"
+                            aria-label="GitHub"><i data-lucide="github"></i></a>
+                        <a href="https://www.linkedin.com/in/balasundharam-j-a75b642a3" target="_blank" rel="noopener"
+                            class="h-link mag" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="https://www.instagram.com/_bala._.25?igsh=cnR6OTJvcjU4anMx" target="_blank"
+                            rel="noopener" class="h-link mag" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hv-ring"></div>
+                    <div class="hv-ring hv-ring--2"></div>
+                    <div class="hv-avatar">
+                        <img src="bala passport size photo.jpeg" alt="Balasundharam J" class="avatar-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── ABOUT ─── -->
+        <section id="about" class="sec">
+            <div class="container">
+                <header class="sec-hd rv"><span class="sec-n">01</span>
+                    <h2>About <span class="gr">Me</span></h2>
+                    <div class="sec-bar"></div>
+                </header>
+                <div class="glass card-tilt rv" data-tilt>
+                    <div class="about-txt">
+                        <p>I'm <strong>Balasundharam J</strong>, a final-year <strong>Electronics and Communication
+                                Engineering</strong> student building technology that bridges hardware and software. My
+                            journey spans embedded systems design, IoT architecture, full-stack web development, and
+                            AI/ML applications.</p>
+                        <p>As a <strong class="gr">Grand Finalist at the Smart India Hackathon 2024</strong>, I've
+                            demonstrated the ability to solve real-world challenges under competitive pressure — from
+                            developing industrial IoT prototypes to deep learning classification models and responsive
+                            web applications.</p>
+                        <p>Beyond engineering, I'm a natural leader — coordinating symposium events, volunteering with
+                            NSS, and captaining my kabaddi team. I believe in design thinking, continuous innovation,
+                            and cross-disciplinary collaboration to create impactful solutions.</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item"><span class="stat-v" data-to="3">0</span><span
+                                class="stat-plus">+</span><small>Projects</small></div>
+                        <div class="stat-item"><span class="stat-v" data-to="3">0</span><span
+                                class="stat-plus">+</span><small>Internships</small></div>
+                        <div class="stat-item"><span class="stat-v" data-to="5">0</span><span
+                                class="stat-plus">+</span><small>Certifications</small></div>
+                        <div class="stat-item"><span class="stat-v" data-to="3">0</span><span
+                                class="stat-plus">+</span><small>Industrial Visits</small></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SKILLS ─── -->
+        <section id="skills" class="sec sec--alt">
+            <div class="container">
+                <header class="sec-hd rv"><span class="sec-n">02</span>
+                    <h2>Skills & <span class="gr">Technologies</span></h2>
+                    <div class="sec-bar"></div>
+                </header>
+                <div class="sk-grid">
+                    <div class="sk-card glass card-tilt rv" data-tilt>
+                        <div class="sk-head"><i data-lucide="terminal" class="sk-ic"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="bars">
+                            <div class="bar-row"><span>C Programming</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" data-w="85"></div>
+                                </div>
+                            </div>
+                            <div class="bar-row"><span>Core Java</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" data-w="78"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sk-card glass card-tilt rv" data-tilt>
+                        <div class="sk-head"><i data-lucide="globe" class="sk-ic"></i>
+                            <h3>Web / Frameworks</h3>
+                        </div>
+                        <div class="bars">
+                            <div class="bar-row"><span>HTML</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" data-w="92"></div>
+                                </div>
+                            </div>
+                            <div class="bar-row"><span>CSS</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" data-w="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sk-card glass card-tilt rv" data-tilt>
+                        <div class="sk-head"><i data-lucide="brain-circuit" class="sk-ic"></i>
+                            <h3>AI / Data</h3>
+                        </div>
+                        <div class="bars">
+                            <div class="bar-row"><span>TensorFlow</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" data-w="75"></div>
+                                </div>
+                            </div>
+                            <div class="bar-row"><span>Keras</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" data-w="74"></div>
+                                </div>
+                            </div>
+                            <div class="bar-row"><span>CNN-LSTM</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" data-w="70"></div>
+                                </div>
+                            </div>
+                            <div class="bar-row"><span>Mel Spectrogram</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" data-w="68"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sk-card glass card-tilt rv" data-tilt>
+                        <div class="sk-head"><i data-lucide="database" class="sk-ic"></i>
+                            <h3>Databases & Cloud</h3>
+                        </div>
+                        <div class="bars">
+                            <div class="bar-row"><span>SQL</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" data-w="80"></div>
+                                </div>
+                            </div>
+                            <div class="bar-row"><span>Firebase</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" data-w="72"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sk-card glass card-tilt rv" data-tilt>
+                        <div class="sk-head"><i data-lucide="wrench" class="sk-ic"></i>
+                            <h3>Tools & IDEs</h3>
+                        </div>
+                        <div class="chips"><span class="chip">Eclipse</span><span class="chip">VS Code</span><span
+                                class="chip">SQL Workbench</span><span class="chip">Excel</span><span
+                                class="chip">GitHub</span><span class="chip">MS Office</span></div>
+                    </div>
+                    <div class="sk-card glass card-tilt rv" data-tilt>
+                        <div class="sk-head"><i data-lucide="layout" class="sk-ic"></i>
+                            <h3>CAD / Design</h3>
+                        </div>
+                        <div class="chips"><span class="chip">Canva</span><span class="chip">KiCad</span><span
+                                class="chip">Fusion 360</span><span class="chip">Blender</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── PROJECTS ─── -->
+        <section id="projects" class="sec">
+            <div class="container">
+                <header class="sec-hd rv"><span class="sec-n">03</span>
+                    <h2>Featured <span class="gr">Projects</span></h2>
+                    <div class="sec-bar"></div>
+                </header>
+                <div class="proj-grid">
+                    <article class="proj glass card-tilt rv" data-tilt>
+                        <div class="proj-img">
+                            <img src="project1.png" alt="Smart Water Management" class="proj-cover">
+                            <span class="proj-badge">Featured · IoT</span>
+                        </div>
+                        <div class="proj-body">
+                            <h3>Smart Water Management System</h3>
+                            <ul>
+                                <li>IoT-based automation using industrial sensors</li>
+                                <li>Integrated ESP-Now &amp; 5G communication</li>
+                                <li>Reduced land usage by 50%</li>
+                                <li>Research paper in progress</li>
+                            </ul>
+                            <div class="proj-tags"><span>Embedded
+                                    C</span><span>ESP-Now</span><span>IoT</span><span>Fusion
+                                    360</span><span>Blender</span></div>
+                            <a href="https://github.com/" target="_blank" rel="noopener"
+                                class="btn btn--sm btn--primary mag"><i data-lucide="github"
+                                    class="btn-i"></i>GitHub</a>
+                        </div>
+                    </article>
+                    <article class="proj glass card-tilt rv" data-tilt>
+                        <div class="proj-img proj-img--b">
+                            <img src="project2.png" alt="Color Sorting Machine" class="proj-cover">
+                            <span class="proj-badge">Hardware</span>
+                        </div>
+                        <div class="proj-body">
+                            <h3>Color-Based Product Sorting</h3>
+                            <ul>
+                                <li>Arduino Uno + TCS3200 color sensor</li>
+                                <li>Automated object sorting by color</li>
+                                <li>Cost-effective industrial prototype</li>
+                            </ul>
+                            <div class="proj-tags"><span>Arduino</span><span>TCS3200</span><span>Embedded
+                                    C</span><span>Sensors</span></div>
+                            <a href="https://github.com/" target="_blank" rel="noopener"
+                                class="btn btn--sm btn--primary mag"><i data-lucide="github"
+                                    class="btn-i"></i>GitHub</a>
+                        </div>
+                    </article>
+                    <article class="proj glass card-tilt rv" data-tilt>
+                        <div class="proj-img proj-img--c">
+                            <img src="project3.png" alt="Respiratory Disease Classification" class="proj-cover">
+                            <span class="proj-badge">AI / ML</span>
+                        </div>
+                        <div class="proj-body">
+                            <h3>Respiratory Disease Classification</h3>
+                            <ul>
+                                <li>Deep learning with lung sound recordings</li>
+                                <li>Mel spectrogram feature extraction</li>
+                                <li>98% classification accuracy</li>
+                                <li>Multi-class: Asthma, COPD, Pneumonia</li>
+                            </ul>
+                            <div class="proj-tags">
+                                <span>Python</span><span>TensorFlow</span><span>Keras</span><span>CNN-LSTM</span>
+                            </div>
+                            <a href="https://github.com/" target="_blank" rel="noopener"
+                                class="btn btn--sm btn--primary mag"><i data-lucide="github"
+                                    class="btn-i"></i>GitHub</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── EXPERIENCE ─── -->
+        <section id="experience" class="sec sec--alt">
+            <div class="container">
+                <header class="sec-hd rv"><span class="sec-n">04</span>
+                    <h2>Internship <span class="gr">Experience</span></h2>
+                    <div class="sec-bar"></div>
+                </header>
+                <div class="tl">
+                    <div class="tl-line"></div>
+                    <div class="tl-item rv">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card glass card-tilt" data-tilt>
+                            <time class="tl-date">March 2024</time>
+                            <h3>Software Testing Intern (Online)</h3>
+                            <p class="tl-org"><i data-lucide="building-2" class="btn-i"></i>Intarm Technologies,
+                                Madhavaram</p>
+                            <p>Tested software manually and with automation tools; identified bugs, reported defects,
+                                and worked with developers to reduce post-release issues.</p>
+                        </div>
+                    </div>
+                    <div class="tl-item rv">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card glass card-tilt" data-tilt>
+                            <time class="tl-date">July 2025</time>
+                            <h3>Full Stack Development Internship</h3>
+                            <p class="tl-org"><i data-lucide="building-2" class="btn-i"></i>NSIC, Ekkaduthangal</p>
+                            <p>Created responsive web interfaces using HTML, CSS, and JavaScript. Worked on backend
+                                integration, API development, and performance optimization.</p>
+                        </div>
+                    </div>
+                    <div class="tl-item rv">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card glass card-tilt" data-tilt>
+                            <time class="tl-date">Aug – Sep 2025</time>
+                            <h3>Java Development Intern (Online)</h3>
+                            <p class="tl-org"><i data-lucide="building-2" class="btn-i"></i>OASIS INFOBYTE</p>
+                            <p>Gained hands-on experience in object-oriented programming, building Java applications,
+                                and understanding real-world software development workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── ACHIEVEMENTS ─── -->
+        <section id="achievements" class="sec">
+            <div class="container">
+                <header class="sec-hd rv"><span class="sec-n">05</span>
+                    <h2>Achievements & <span class="gr">Activities</span></h2>
+                    <div class="sec-bar"></div>
+                </header>
+                <div class="ach-grid">
+                    <div class="ach glass card-tilt rv" data-tilt>
+                        <div class="ach-ic"><i data-lucide="trophy"></i></div>
+                        <h3>Grand Finalist</h3>
+                        <p>Smart India Hackathon 2024</p>
+                    </div>
+                    <div class="ach glass card-tilt rv" data-tilt>
+                        <div class="ach-ic"><i data-lucide="award"></i></div>
+                        <h3>Paper Presentation</h3>
+                        <p>Saveetha Engineering College</p>
+                    </div>
+                    <div class="ach glass card-tilt rv" data-tilt>
+                        <div class="ach-ic"><i data-lucide="users"></i></div>
+                        <h3>Event Coordinator</h3>
+                        <p>Symposium PRANAV2K25</p>
+                    </div>
+                    <div class="ach glass card-tilt rv" data-tilt>
+                        <div class="ach-ic"><i data-lucide="heart"></i></div>
+                        <h3>NSS Volunteer</h3>
+                        <p>National Service Scheme</p>
+                    </div>
+                    <div class="ach glass card-tilt rv" data-tilt>
+                        <div class="ach-ic"><i data-lucide="medal"></i></div>
+                        <h3>Team Leader</h3>
+                        <p>College Kabaddi Team</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── INDUSTRIAL EXPOSURE ─── -->
+        <section id="industrial" class="sec sec--alt">
+            <div class="container">
+                <header class="sec-hd rv"><span class="sec-n">06</span>
+                    <h2>Industrial <span class="gr">Exposure</span></h2>
+                    <div class="sec-bar"></div>
+                </header>
+                <div class="ind-grid">
+                    <div class="ind glass card-tilt rv" data-tilt><span class="ind-yr">Nov 2023</span>
+                        <h3>Force Of Rapid Transformation (FORT)</h3>
+                        <p>Foundational technologies and manufacturing processes exposure.</p>
+                    </div>
+                    <div class="ind glass card-tilt rv" data-tilt><span class="ind-yr">Oct 2024</span>
+                        <h3>NLC India Limited</h3>
+                        <p>Large-scale energy production, power plant operations, and industrial systems exploration.
+                        </p>
+                    </div>
+                    <div class="ind glass card-tilt rv" data-tilt><span class="ind-yr">Apr 2025</span>
+                        <h3>Sathish Dhawan Space Centre – SHAR</h3>
+                        <p>ISRO's satellite launch facility — space technology and propulsion systems observation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── CERTIFICATIONS ─── -->
+        <section id="certifications" class="sec">
+            <div class="container">
+                <header class="sec-hd rv"><span class="sec-n">07</span>
+                    <h2>Certifications & <span class="gr">Courses</span></h2>
+                    <div class="sec-bar"></div>
+                </header>
+                <div class="cert-grid">
+                    <div class="cert glass card-tilt rv" data-tilt><i data-lucide="badge-check" class="cert-ic"></i>
+                        <h3>Programming in Java</h3><small>Udemy | Feb 2025</small>
+                    </div>
+                    <div class="cert glass card-tilt rv" data-tilt><i data-lucide="badge-check" class="cert-ic"></i>
+                        <h3>Data Science & Analytics</h3><small>HP LIFE | Feb 2025</small>
+                    </div>
+                    <div class="cert glass card-tilt rv" data-tilt><i data-lucide="badge-check" class="cert-ic"></i>
+                        <h3>Matlab Onramp</h3><small>MathWorks | Aug 2025</small>
+                    </div>
+                    <div class="cert glass card-tilt rv" data-tilt><i data-lucide="badge-check" class="cert-ic"></i>
+                        <h3>VLSI Course</h3><small>Simplilearn | Sep 2025</small>
+                    </div>
+                    <div class="cert glass card-tilt rv" data-tilt><i data-lucide="badge-check" class="cert-ic"></i>
+                        <h3>MongoDB Basics</h3><small>MongoDB | Jun 2025</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── CONTACT ─── -->
+        <section id="contact" class="sec sec--alt">
+            <div class="container">
+                <header class="sec-hd rv"><span class="sec-n">08</span>
+                    <h2>Get In <span class="gr">Touch</span></h2>
+                    <div class="sec-bar"></div>
+                </header>
+                <div class="ct-grid">
+                    <div class="ct-info rv">
+                        <h3>Let's Build Something <span class="gr">Great</span></h3>
+                        <p>I'm open to internship, freelance, and full-time opportunities. If you have a project or
+                            idea, feel free to reach out!</p>
+                        <div class="ct-rows">
+                            <div class="ct-r"><i data-lucide="mail" class="ct-icon"></i>
+                                <div><small>Email</small><a
+                                        href="mailto:bsundharam0@gmail.com">bsundharam0@gmail.com</a></div>
+                            </div>
+                            <div class="ct-r"><i data-lucide="map-pin" class="ct-icon"></i>
+                                <div><small>Location</small><span>Tamil Nadu, India</span></div>
+                            </div>
+                            <div class="ct-r"><i data-lucide="linkedin" class="ct-icon"></i>
+                                <div><small>LinkedIn</small><a
+                                        href="https://www.linkedin.com/in/balasundharam-j-a75b642a3" target="_blank"
+                                        rel="noopener">Balasundharam J</a></div>
+                            </div>
+                            <div class="ct-r"><i data-lucide="github" class="ct-icon"></i>
+                                <div><small>GitHub</small><a href="https://github.com/bala25042004" target="_blank"
+                                        rel="noopener">bala25042004</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="cform" class="glass ct-form rv" autocomplete="off"
+                        action="https://formsubmit.co/bsundharam0@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Message from Portfolio!">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="fg"><input id="fn" name="name" type="text" required placeholder=" " /><label
+                                for="fn">Your
+                                Name</label><span class="fg-line"></span></div>
+                        <div class="fg"><input id="fe" name="email" type="email" required placeholder=" " /><label
+                                for="fe">Your
+                                Email</label><span class="fg-line"></span></div>
+                        <div class="fg"><textarea id="fm" name="message" rows="5" required
+                                placeholder=" "></textarea><label for="fm">Message</label><span class="fg-line"></span>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full mag"><i data-lucide="send"
+                                class="btn-i"></i>Send Message</button>
+                        <p id="fstatus" class="fstatus"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>Built with <span class="gr">passion</span> and <span class="gr">innovation</span></p>
+            <div class="footer-links">
+                <a href="https://github.com/bala25042004" target="_blank" rel="noopener" class="h-link mag"
+                    aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/balasundharam-j-a75b642a3" target="_blank" rel="noopener"
+                    class="h-link mag" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://www.instagram.com/_bala._.25?igsh=cnR6OTJvcjU4anMx" target="_blank" rel="noopener"
+                    class="h-link mag" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="mailto:bsundharam0@gmail.com" class="h-link mag" aria-label="Email"><i
+                        data-lucide="mail"></i></a>
+            </div>
+            <p class="copy">&copy; 2026 Balasundharam J. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
